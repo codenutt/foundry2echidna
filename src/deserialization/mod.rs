@@ -28,7 +28,6 @@ mod deserialization_tests {
                 "type": "0x02",
                 "from": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
                 "gas": "0x936a5",
-                "value": "0x0",
                 "data": "0x608060405",
                 "nonce": "0x1",
                 "accessList": []
