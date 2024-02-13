@@ -26,10 +26,15 @@ pub struct Receipt {
     pub effective_gas_price: String,
 }
 
+fn default_tx_value() -> String {
+    "0x0".to_string()
+}
+
 #[derive(Deserialize, Serialize, Debug, PartialEq, Eq)]
 pub struct TransactionDetails {
     pub from: String,
     pub to: Option<String>,
+    #[serde(default = "default_tx_value")]
     pub value: String,
     pub data: String,
 }
